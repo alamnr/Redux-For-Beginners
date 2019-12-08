@@ -11,8 +11,10 @@ function App() {
   return (
     <div className="App">
       <h1>Learn React, Counter - {counter} </h1>
-       <button onClick={()=>dispatch(increment())}>+</button>
-       <button onClick={()=>dispatch(decrement())}>-</button>
+       <button onClick={()=>dispatch(increment())}>+</button><span>  </span>
+       <button onClick={()=>dispatch(decrement())}>-</button><span>  </span>
+
+       <button onClick={()=>dispatch(increment(5))}>+ (Increment with param)</button>
 
       {isLoggedin?<p>Valuable Info i should not see</p>:''}
     </div>
